@@ -22,9 +22,13 @@ import twitter from "./twitter.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
-import logo from "./logo.png"
-import Waves from "./waves.png"
+import logo from "./logo.png";
+import Waves from "./waves.png";
+import Mic from "./mic.mp4";
+import CustomerSupport from "./CustomerSupport.png";
+
 export {
+  CustomerSupport,
   airbnb,
   bill,
   binance,
@@ -50,5 +54,6 @@ export {
   people01,
   people02,
   people03,
-  Waves
+  Waves,
+  Mic
 };

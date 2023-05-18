@@ -12,6 +12,10 @@ export const theme = {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },
+    animation: {
+      'bounce-slow' :'bounce 4s linear infinite',
+      'pulse-slow' :'pulse 5s linear infinite'
+    }
   },
   screens: {
     xs: "480px",
@@ -21,5 +25,6 @@ export const theme = {
     lg: "1200px",
     xl: "1700px",
   },
+
 };
 export const plugins = [];

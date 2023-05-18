@@ -1,5 +1,5 @@
 import styles from "../style"
-import { clients } from "../constants"
+import { cliens } from "../constants"
 
 
 

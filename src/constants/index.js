@@ -14,9 +14,13 @@ export const navLinks = [
     title: "Product",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "About",
+    title: "About",
   },
+  {
+    id: "Contact",
+    title: "Contact"
+  }
 ];
 
 export const features = [
@@ -74,12 +78,12 @@ export const stats = [
   {
     id: "stats-1",
     title: "User Active",
-    value: "3800+",
+    value: "100+",
   },
   {
     id: "stats-2",
     title: "Trusted by Company",
-    value: "230+",
+    value: "70+",
   },
   {
     id: "stats-3",
