@@ -26,6 +26,7 @@ import logo from "./logo.png";
 import Waves from "./waves.png";
 import Mic from "./mic.mp4";
 import CustomerSupport from "./CustomerSupport.png";
+import HandShake from "./handshake-.svg"
 
 export {
   CustomerSupport,
@@ -55,5 +56,6 @@ export {
   people02,
   people03,
   Waves,
-  Mic
+  Mic,
+  HandShake
 };

@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { HandShake, people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -29,21 +29,21 @@ export const features = [
     icon: star,
     title: "Rewards",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      " Improve customer communication and satisfaction with our API-powered voice recorder.",
   },
   {
     id: "feature-2",
     icon: shield,
     title: "100% Secured",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "We take proactive steps make sure your personal informations and chat are secure.",
   },
   {
     id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
+    icon: HandShake,
+    title: "Relationship",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Make customers feel like they are talking to a real person, not a machine.",
   },
 ];
 
@@ -83,12 +83,12 @@ export const stats = [
   {
     id: "stats-2",
     title: "Trusted by Company",
-    value: "70+",
+    value: "10+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Sales",
+    value: "50+",
   },
 ];
 

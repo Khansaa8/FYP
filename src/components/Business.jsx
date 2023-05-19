@@ -1,7 +1,6 @@
 import { features } from "../constants"
 import styles, {layout} from "../style"
 import Button from "./Button"
-import button from "./Button"
 const FeatureCard = ({icon ,title ,content ,index}) =>(
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length -1 ? "mb-6" :"mb-0"} feature-card `}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
@@ -20,7 +19,7 @@ const FeatureCard = ({icon ,title ,content ,index}) =>(
 
 const Business = () => {
   return (
-    <section id="feature" className={layout.section}>
+    <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2 }>
         You do the business, <br className="sm:block hidden " /> we'll handle the voice of Customer.
