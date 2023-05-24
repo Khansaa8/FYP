@@ -41,7 +41,7 @@ export const features = [
   {
     id: "feature-3",
     icon: HandShake,
-    title: "Relationship",
+    title: "Building Relationships",
     content:
       "Make customers feel like they are talking to a real person, not a machine.",
   },
