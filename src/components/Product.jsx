@@ -2,7 +2,7 @@ import { apple, google } from "../assets"
 import styles ,{layout} from "../style"
 import Video from "./video"
 
-const Billing = () => (
+const Product = () => (
     <section id="product" className={layout.sectionReverse} >
       <div className={layout.sectionImgReverse}>
         <Video />
@@ -22,4 +22,4 @@ const Billing = () => (
     </section>
   )
 
-export default Billing
+export default Product

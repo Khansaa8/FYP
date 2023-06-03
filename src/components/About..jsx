@@ -1,10 +1,10 @@
-import { card, CustomerSupport } from "../assets"
+import { CustomerSupport } from "../assets"
 import styles , {layout} from "../style"
 import Button from "./Button"
 
 
-const CardDeal = () =>(
-    <section className={layout.section}>
+const About = () =>(
+    <section id="About" className={layout.section}>
       <div className={layout.sectionInfo}>
         <h2 className={styles.heading2}>Find a better customer<br className="sm:block hidden" /> support service.</h2>
         <p className={`${styles.paragraph} max-w-[470px] mt-5 `}>Customer can simply speak to their need, and get on their day, whether you're available to respond immediately or later.</p>
@@ -17,4 +17,4 @@ const CardDeal = () =>(
   )
 
 
-export default CardDeal
+export default About

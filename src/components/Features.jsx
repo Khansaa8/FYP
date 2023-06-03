@@ -17,7 +17,7 @@ const FeatureCard = ({icon ,title ,content ,index}) =>(
   </div>
 )
 
-const Business = () => {
+const Features = () => {
   return (
     <section id="features" className={layout.section}>
       <div className={layout.sectionInfo}>
@@ -37,4 +37,4 @@ const Business = () => {
   )
 }
 
-export default Business
+export default Features
