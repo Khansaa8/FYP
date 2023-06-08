@@ -1,17 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { Link } from "react-router-dom";
-
+import { animateScroll as scroll } from "react-scroll";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-  const [toggle, setToggle] = useState(false);
+
+    // Update active link when the location changes
+    const navigate = useNavigate();
+    const [active, setActive] = useState("Home");
+    const [toggle, setToggle] = useState(false);
+  
+    const handleClick = (title, link) => {
+      setActive(title);
+      navigate(link);
+    };
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[198px] h-[70px]" />
-
+      <img src={logo} alt="RecAuto" className="w-[198px] h-[70px]" />
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -19,9 +26,13 @@ const Navbar = () => {
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
           >
-            <Link to={nav.link} href={`#${nav.id}`}>{nav.title}</Link>
+            <Link
+              to={nav.link}
+              onClick={() => handleClick(nav.title, nav.link)}
+            >
+              {nav.title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -46,9 +57,9 @@ const Navbar = () => {
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => handleClick(nav)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+               <Link to={nav.link}>{nav.title}</Link>
               </li>
             ))}
           </ul>
@@ -56,6 +67,8 @@ const Navbar = () => {
       </div>
     </nav>
   );
-};
+              }
+
+
 
 export default Navbar;

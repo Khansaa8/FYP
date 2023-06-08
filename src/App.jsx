@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 import styles from "./style";
 import {
   Product,
@@ -11,7 +14,21 @@ import {
 import MainLayout from "./Layout/MainLayout";
 
 
-const App = () =>  (
+const App = () =>  { 
+  const location = useLocation();
+
+  useEffect(() => {
+    const element = document.getElementById(location.hash.slice(1));
+    if (element) {
+      scroll.scrollTo(element.offsetTop, {
+        duration: 500,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -100,
+      });
+    }
+  }, [location]);
+  return(
 
       <MainLayout>
           <div className={`bg-primary ${styles.flexStart}`}>
@@ -23,7 +40,7 @@ const App = () =>  (
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Stats />
-              <Features />
+              <div id="features"><Features /></div>
               <Product />
               <About />
               <Testimonials />
@@ -32,6 +49,6 @@ const App = () =>  (
           </div>
       </MainLayout>
 
-  );
+  );}
 
 export default App;

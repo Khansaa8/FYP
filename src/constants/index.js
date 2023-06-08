@@ -1,4 +1,4 @@
-import { HandShake,facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { HandShake,facebook, instagram, linkedin, twitter,shield, star  } from "../assets";
 
 
 export const navLinks = [
@@ -6,26 +6,31 @@ export const navLinks = [
     id: "home",
     title: "Home",
     link:'/',
+    anchor: "home",
   },
   {
     id: "features",
     title: "Features",
-    link : '/'
+    link : '/#features',
+    anchor: "features",
   },
   {
     id: "product",
     title: "Product",
-    link: "/"
+    link: "/#product",
+    anchor: "product",
   },
   {
-    id: "About",
+    id: "about",
     title: "About",
-    link:"/"
+    link:"/#about",
+    anchor: "about",
   },
   {
-    id: "Contact",
+    id: "contact",
     title: "Contact",
-    link:"/"
+    link:"/#contact",
+    anchor: "contact",
   }
 ];
 
@@ -76,14 +81,17 @@ export const footerLinks = [
     title: "Useful Links",
     links: [
       {
+        id: '0',
         name: "Content",
         link: "/content",
       },
       {
+        id: '1',
         name: "How it Works",
         link: "/howitworks",
       },
       {
+        id: '2',
         name: "Terms & Services",
         link: "/termsservives",
       },
@@ -93,14 +101,17 @@ export const footerLinks = [
     title: "Community",
     links: [
       {
+        id: '3', 
         name: "Help Center",
         link: "/helpcenter",
       },
       {
+        id: '4',
         name: "Blog",
         link: "/blog",
       },
       {
+        id: '5',
         name: "Explore",
         link: "/explore",
       },
