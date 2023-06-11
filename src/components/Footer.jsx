@@ -4,11 +4,12 @@ import { footerLinks, socialMedia } from "../constants"
 import { Link } from "react-router-dom"
 
 const Footer = () => (
-    <section className={`${styles.flexCenter} ${styles.padding} flex-col`}>
+    <section className={` ${styles.flexCenter} ${styles.padding} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-        <div className="flex-1 flex flex-col justify-start mr-[330px]">
-          <img  src={logo} alt="logo" className="w-[266px] h-[72px] object-obtain " />
-          <p className={`${styles.paragraph} mt-4 max-w-[310px] `}>A new way to build customer relationships easy, secure and reliable.</p>
+        <div className="flex-1 flex flex-col justify-start "> 
+         {/* mr-[330px] */}
+          <img  src={logo} alt="logo" className="w-[244px] h-[70px] object-obtain " />
+          <p className={`${styles.paragraph} mt-4 max-w-[380px] `}>A new way to build customer relationships easy, secure and reliable.</p>
         </div>
 
         <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 ">
@@ -34,7 +35,7 @@ const Footer = () => (
 
       <div className="w-full flex justify-between md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3fe45]  " >
         <p className="font-poppins font-normal text-center leading-[27px] text-white text-[18px] ">2023 RecAuto. All Rights Reserved.</p>
-        <div className="flex flex-row md:mt-0 mt-6">
+        <div className="flex justify-center flex-row md:mt-0 mt-6">
           {socialMedia.map((social , index) =>(
             <img key={social.id}
             src={social.icon}

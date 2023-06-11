@@ -26,12 +26,7 @@ export const navLinks = [
     link:"/#about",
     anchor: "about",
   },
-  {
-    id: "contact",
-    title: "Contact",
-    link:"/#contact",
-    anchor: "contact",
-  }
+
 ];
 
 export const features = [

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
-import { animateScroll as scroll } from "react-scroll";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "./Button2";
 
 const Navbar = () => {
 
@@ -23,9 +23,9 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
+            className={`font-poppins font-normal cursor-pointer text-[18px] ${
               active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+            } ${index === navLinks.length - 1 ? "mr-1" : "mr-10"}`}
           >
             <Link
               to={nav.link}
@@ -35,6 +35,9 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
+        <li className={`pl-7 cursor-pointer `}>
+            <Button/>
+            </li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -57,9 +60,11 @@ const Navbar = () => {
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => handleClick(nav)}
+                
               >
-               <Link to={nav.link}>{nav.title}</Link>
+               <Link to={nav.link}
+                 onClick={() => handleClick(nav.title, nav.link)}>
+               {nav.title}</Link>
               </li>
             ))}
           </ul>
