@@ -1,11 +1,12 @@
 import MainLayout from "../Layout/MainLayout"
+import { layout } from "../style"
 
 const HelpCenter = () => {
   return (
     <MainLayout>
-    <div>
-    Blog
-    </div>
+    <section className={layout.section}>
+    
+    </section>
     </MainLayout>
   )
 }

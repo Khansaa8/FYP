@@ -7,6 +7,7 @@ import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Home from "./Home";
+import FormButton from "./FormButton" 
 export {
     Navbar,
     Product,
@@ -17,4 +18,5 @@ export {
     Footer,
     Testimonials,
     Home,
+    FormButton
   };

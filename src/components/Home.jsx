@@ -1,5 +1,5 @@
 import styles from '../style'
-import { discount, robot, Waves} from '../assets'
+import { discount, Waves} from '../assets'
 import GetStarted from "./GetStarted"
 
 const Home = () =>(

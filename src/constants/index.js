@@ -77,8 +77,8 @@ export const footerLinks = [
     links: [
       {
         id: '0',
-        name: "Content",
-        link: "/content",
+        name: "Contact",
+        link: "/contact",
       },
       {
         id: '1',
@@ -136,4 +136,59 @@ export const socialMedia = [
     icon: linkedin,
     link: "https://www.linkedin.com/",
   },
+  
 ];
+
+export const contacts = [
+  {
+    id: "1",
+    icon: star,
+    title: "Discover more",
+    content:
+      "‍‍‍‍Get a custom demo for your use case or business",
+  },
+  {
+    id: "2",
+    icon: shield,
+    title: "Collaborate with us",
+    content:
+      "Let's share your thoughts with us without any hesitation.",
+  },
+  {
+    id: "3",
+    icon: HandShake,
+    title: "Drop us a line!",
+    content:
+      "Say hello! we enjoy listening to you",
+  },
+];
+
+export const fValues =[
+  {
+    id: "full-name",
+    label: "First Name",
+    type:"text"
+  },
+  {
+    id: "last-name",
+    label: "Last Name",
+    type:"text"
+
+  },
+  {
+    id: "company",
+    label: "Company",
+    type:"text"
+
+  },
+  {
+    id: "email",
+    label: "Email",
+    type:"email"
+  },
+  {
+    id: "phone",
+    label: "Phone number",
+    type:"tel"
+  },
+]

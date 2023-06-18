@@ -5,14 +5,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import {
   Blog,
-  Content,
+  Contact,
   ErrorPage,
   Explore,
   HelpCenter,
   HIW,
   TermsServives,
 } from "./pages/";
-import { About, Contact, Features, Product } from "./components";
+import { About, Features, Product } from "./components";
 
 const router = (
   <BrowserRouter>
@@ -20,7 +20,6 @@ const router = (
       <Route path="/" element={<App />} />
       <Route path="/howitworks" element={<HIW />} />
       <Route path="/blog" element={<Blog />} />
-      <Route path="/content" element={<Content />} />
       <Route path="/explore" element={<Explore />} />
       <Route path="/helpCenter" element={<HelpCenter />} />
       <Route path="/termsservives" element={<TermsServives />} />

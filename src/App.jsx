@@ -27,6 +27,7 @@ const App = () =>  {
         offset: -100,
       });
     }
+    console.log(element)
   }, [location]);
   return(
 

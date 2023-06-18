@@ -1,17 +1,19 @@
 import Blog from "./Blog"
-import Content from "./content"
 import ErrorPage from "./error-pgae"
 import Explore from "./Explore"
 import HelpCenter from "./HelpCenter"
 import HIW from "./HIW"
 import TermsServives from "./Terms&Services"
+import Form from "./form.jsx"
+import Contact from "./Contact"
 
 export{
     Blog,
-    Content,
+    Contact,
     ErrorPage,
     Explore,
     HelpCenter,
     HIW,
     TermsServives,
+    Form,
 }
