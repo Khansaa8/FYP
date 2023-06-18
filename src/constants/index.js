@@ -73,7 +73,7 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Resources",
     links: [
       {
         id: '0',
@@ -92,27 +92,6 @@ export const footerLinks = [
       },
     ],
   },
-  {
-    title: "Community",
-    links: [
-      {
-        id: '3', 
-        name: "Help Center",
-        link: "/helpcenter",
-      },
-      {
-        id: '4',
-        name: "Blog",
-        link: "/blog",
-      },
-      {
-        id: '5',
-        name: "Explore",
-        link: "/explore",
-      },
-    ],
-  },
-  
 ];
 
 export const socialMedia = [

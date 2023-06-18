@@ -11,7 +11,7 @@ const About = () =>(
         <Button styles="mt-10"/>
       </div>
       <div className={layout.sectionImg}>
-        <img src={CustomerSupport} alt="card" className="animate-pulse-slow w-[70%] h-[100%]" />
+        <img src={CustomerSupport} alt="card" className="animate-pulse w-[70%] h-[100%]" />
       </div>
     </section>
   )
