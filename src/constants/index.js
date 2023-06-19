@@ -78,7 +78,7 @@ export const footerLinks = [
       {
         id: '0',
         name: "Contact",
-        link: "/contact",
+        link: "/contact#",
       },
       {
         id: '1',
@@ -171,3 +171,54 @@ export const fValues =[
     type:"tel"
   },
 ]
+export const termsServices = [
+  {
+    id: "Term-1",
+    title: "Eligibilty",
+    content:
+      "Our website is available to users who are 13 years of age or older. If you are under the age of 13, you must have the permission of a parent or guardian to use our website.",
+  },
+  {
+    id: "Term-2",
+    title: "Account Creation",
+    content:
+      "In order to use certain features of our website, you may need to create an account. When creating an account, you must provide accurate and complete information. You are responsible for keeping your account information confidential and for all activity that occurs on your account.",
+  },
+  {
+    id: "Term-3",
+    title: "Content",
+    content:
+      "You are responsible for all content that you post on our website. You agree that your content will not violate any laws or regulations, and that it will not infringe on the rights of any third party. You also agree that your content will not be defamatory, obscene, or otherwise offensive.",
+  },
+  {
+    id: "Term-4",
+    title: "Conduct",
+    content:
+      "You agree to use our website in a respectful and lawful manner. You agree not to engage in any activity that would disrupt or damage our website, or that would violate the rights of any third party.",
+  },
+  {
+    id: "Term-5",
+    title: "Termination",
+    content:
+      "We may terminate your account at any time for any reason. We also reserve the right to change or modify these Terms of Service at any time.",
+  },
+  {
+    id: "Term-6",
+    title: "Governing Law",
+    content:
+      "These Terms of Service are governed by the laws of the State of California. Any dispute arising out of these Terms of Service will be resolved in a court of law located in the State of California.",
+  },
+  {
+    id: "Term-7",
+    title: "Entire Agrrement",
+    content:
+      "These Terms of Service constitute the entire agreement between you and us regarding the use of our website. These Terms of Service supersede any prior or contemporaneous communications, representations, or agreements, whether oral or written.",
+  },
+  {
+    id: "Term-8",
+    title: "Contact us",
+    content:
+      "If you have any questions about these Terms of Service, please contact at " ,
+  }
+  
+];

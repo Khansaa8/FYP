@@ -1,13 +1,13 @@
 import React from "react";
-import styles,{ forms } from "../style";
+import styles , { forms } from "../style";
 import { fValues } from "../constants";
 import { FormButton } from "../components";
 
 const form = () => {
   return (
     <div className=" text-white">
-      <div className="mx-auto max-w-2xl text-center">
-        <h2 className={`${styles.heading2} text-gradient`}>
+      <div className="text-center">
+        <h2 className={`${styles.heading2} mt-5 text-gradient`}>
           Contact Us
         </h2>
       </div>

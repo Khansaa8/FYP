@@ -19,11 +19,12 @@ const ContatCard=({title,content,index}) => (
 const contact = () => {
   return (
     <MainLayout>
-    <div className={` ${styles.paddingX}`}>
-    <section className={`${layout.section}`}>
-     <div className={`${layout.sectionInfo}`}>
+     <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+        <div className={`${styles.boxWidth}`}>
+    <section className={`${layout.section} `}>
+     <div className={`${layout.sectionInfo} `}>
        <div className="flex felx-row justify-between items-center w-full">
-        <h1 className='flex-1 font-poppins font-semibold ss:text-[32px] text-[27px] text-white leading-[75px]'>Hi! What can we do for you?</h1>
+        <h1 className='flex-1 font-poppins font-semibold ss:text-[32px] text-[25px] text-white leading-[43px]'>Hi! What can we do for you?</h1>
        </div>
        <div className="">
         {contacts.map((contact,index) => (
@@ -31,10 +32,12 @@ const contact = () => {
         ))}
        </div>
     </div>
-    <div className={`flex-1  ${styles.flexCenter } bg-[#000514] border-solid border-cyan-700 border-[5px] rounded-[13px] mx-10 py-10 md:my-0 my-12 relative`}>
+    <div className={`${layout.sectionImg}  ${styles.flexCenter } bg-[#000514] border-solid border-cyan-700 border-[5px] rounded-[13px] `}> 
+    {/* xl:mx-10 py-10 md:my-0 my-12 relative */}
     <Form/>
     </div>
     </section>
+    </div>
     </div>
     </MainLayout>
   )
