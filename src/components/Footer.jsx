@@ -8,6 +8,9 @@ const Footer = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top of the page on component mount
   }, []);
+
+  
+
   return (
     <section className={` ${styles.flexCenter} ${styles.padding} flex-col`}>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
@@ -50,8 +53,11 @@ const Footer = () => {
 
       <div className="w-full flex justify-between md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3fe45]  ">
         <p className="font-poppins font-normal text-center leading-[27px] text-white text-[18px] ">
-          2023 RecAuto. All Rights Reserved.
-        </p>
+        &copy; {
+            new Date().getFullYear()
+          } Daniyal and Khansa. All rights reserved. | <span className="text-gradient">RecAuto</span>
+      </p>
+   
         <div className="flex justify-center flex-row md:mt-0 mt-6">
           {socialMedia.map((social, index) => (
             <img

@@ -1,24 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { Link, useNavigate } from "react-router-dom";
 import Button from "./Button2";
 
 const Navbar = () => {
+  // Update active link when the location changes
+  const navigate = useNavigate();
+  const [active, setActive] = useState("Home");
+  const [toggle, setToggle] = useState(false);
 
-    // Update active link when the location changes
-    const navigate = useNavigate();
-    const [active, setActive] = useState("Home");
-    const [toggle, setToggle] = useState(false);
-  
-    const handleClick = (title, link) => {
-      setActive(title);
-      navigate(link);
-    };
+  const handleClick = (title, link) => {
+    setActive(title);
+    navigate(link);
+  };
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="RecAuto" className="w-[198px] h-[70px]" />
+    <nav className="w-full flex py-6 justify-between items-center navbar ">
+    <Link to="/">
+    <img src={logo} alt="RecAuto" className="w-[198px] h-[70px]" />
+    </Link>
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
@@ -36,8 +37,10 @@ const Navbar = () => {
           </li>
         ))}
         <li className={`pl-7 cursor-pointer `}>
-            <Button/>
-            </li>
+          <Link to="/SignUp">
+            <Button />
+          </Link>
+        </li>
       </ul>
 
       <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -60,11 +63,13 @@ const Navbar = () => {
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title ? "text-white" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                
               >
-               <Link to={nav.link}
-                 onClick={() => handleClick(nav.title, nav.link)}>
-               {nav.title}</Link>
+                <Link
+                  to={nav.link}
+                  onClick={() => handleClick(nav.title, nav.link)}
+                >
+                  {nav.title}
+                </Link>
               </li>
             ))}
           </ul>
@@ -72,8 +77,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-              }
-
-
+};
 
 export default Navbar;

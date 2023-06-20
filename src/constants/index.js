@@ -92,6 +92,7 @@ export const footerLinks = [
       },
     ],
   },
+
 ];
 
 export const socialMedia = [
@@ -222,3 +223,21 @@ export const termsServices = [
   }
   
 ];
+export const signupValues =[
+  {
+    id: "user-name",
+    label: "Username",
+    type:"text"
+  },
+
+  {
+    id: "email",
+    label: "Email",
+    type:"email"
+  },
+  {
+    id: "password",
+    label: "Password",
+    type:"password"
+  },
+]

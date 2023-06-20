@@ -1,6 +1,7 @@
 import { features } from "../constants"
 import styles, {layout} from "../style"
 import Button from "./Button"
+import { Link } from "react-router-dom"
 
 const FeatureCard = ({icon ,title ,content ,index}) =>(
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length -1 ? "mb-6" :"mb-0"} feature-card `}>
@@ -26,7 +27,10 @@ const Features = () => {
         You do the business, <br className="sm:block hidden " /> we'll handle the voice of Customer.
         </h2>
         <p className={`${styles.paragraph} max-w-[490px] mt-5 `} >With right communication platform you can engage with your customers in a more meaningful way. Join today and start communicating smarter with your customer.</p>
+        <Link to="/SignUp">
         <Button styles=" mt-10"/>
+
+        </Link>
       </div>
 
       <div className={`${layout.sectionImg} flex-col`} >

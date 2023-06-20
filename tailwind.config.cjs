@@ -13,8 +13,9 @@ export const theme = {
       poppins: ["Poppins", "sans-serif"],
     },
     animation: {
-      'bounce-slow' :'bounce 4s linear infinite',
-      'pulse-slow' :'pulse 5s linear infinite'
+      'bounce-slow' :'bounce 3s linear infinite',
+      'pulse-slow' :'pulse 3s linear infinite',
+      'spin-slow'  :'spin 3s linear infinite'
     }
   },
   screens: {
@@ -24,6 +25,7 @@ export const theme = {
     md: "1060px",
     lg: "1200px",
     xl: "1700px",
+    xxl: "2560px",
   },
 
 };

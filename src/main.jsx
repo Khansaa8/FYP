@@ -4,13 +4,11 @@ import App from "./App.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
 import {
-  Blog,
   Contact,
   ErrorPage,
-  Explore,
-  HelpCenter,
   HIW,
   TermsServives,
+  SignUp
 } from "./pages/";
 import { About, Features, Product } from "./components";
 
@@ -19,14 +17,12 @@ const router = (
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/howitworks" element={<HIW />} />
-      <Route path="/blog" element={<Blog />} />
-      <Route path="/explore" element={<Explore />} />
-      <Route path="/helpCenter" element={<HelpCenter />} />
       <Route path="/termsservives" element={<TermsServives />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/features" element={<Features />} />
       <Route path="/about" element={<About />} />
       <Route path="/product" element={<Product />} />
+      <Route path="/SignUp" element={<SignUp />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>

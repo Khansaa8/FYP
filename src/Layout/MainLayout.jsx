@@ -4,8 +4,8 @@ import { Navbar, Footer } from "../components";
 const MainLayout = ({ children }) => {
   return (
     <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={` bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth} `}>
         <Navbar />
       </div>
       </div>
