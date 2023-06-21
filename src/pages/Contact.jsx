@@ -29,7 +29,7 @@ const contact = () => {
     <MainLayout>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <section className={`${layout.section} `}>
+          <section className={`${layout.section} ${styles.paddingX} `}>
             <div className={`${layout.sectionInfo} `}>
               <div className="flex felx-row justify-between items-center w-full">
                 <h1 className="flex-1 font-poppins font-semibold ss:text-[32px] text-[25px] text-white leading-[43px]">
