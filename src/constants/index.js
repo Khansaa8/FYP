@@ -21,10 +21,14 @@ export const navLinks = [
     anchor: "product",
   },
   {
-    id: "about",
-    title: "About",
-    link:"/#about",
-    anchor: "about",
+    id: 'contact',
+    title: "Contact",
+    link: "/contact#",
+  },
+  {
+    id: 'HIW',
+    title: "Explore",
+    link: "/explore",
   },
 
 ];
@@ -76,20 +80,42 @@ export const footerLinks = [
     title: "Resources",
     links: [
       {
-        id: '0',
-        name: "Contact",
-        link: "/contact#",
+        id: "about",
+        name: "About",
+        link:"/#about",
       },
       {
-        id: '1',
-        name: "How it Works",
-        link: "/howitworks",
-      },
-      {
-        id: '2',
+        id: 'TS',
         name: "Terms & Services",
         link: "/termsservives",
+      },      
+      {
+        id: 'UseC',
+        name: "Login",
+        link: "/SignUp",
       },
+      
+    ],
+  },
+  {
+    title: "Use Case",
+    links: [
+      {
+        id: "about",
+        name: "Sales",
+        link:"/usecase",
+      },
+      {
+        id: 'TS',
+        name: "Podcast",
+        link: "/usecase",
+      },      
+      {
+        id: 'UseC',
+        name: "Feedback",
+        link: "/usecase",
+      },
+      
     ],
   },
 
@@ -240,4 +266,82 @@ export const signupValues =[
     label: "Password",
     type:"password"
   },
+]
+export const ExpVal = [
+  {
+    id: "Value-1",
+    title: "Overview",
+    content:
+      "Our chat box is designed to be user-friendly and easy to integrate into any website. By simply adding an iframe code to their web pages, website owners can include the chat box and unlock the power of audio-based communication.",
+  },
+  {
+    id: "Value-2",
+    title: "Recording and Sending",
+    content:
+      "Using our chat box is a breeze. Website visitors can easily access their device's microphone and record audio messages with a single click. There are no complicated setups or installations required. Feel free to express your thoughts, concerns, or questions through clear and concise audio messages.",
+  },
+  {
+    id: "Value-3",
+    title: "Real-Time Communication",
+    content:
+      "Say goodbye to delays and waiting for responses. Our chat box enables real-time communication, allowing you to send audio messages instantly. Your messages will be promptly received and responded to by the website owner or customer support team, ensuring a timely and efficient conversation.",
+  },
+  {
+    id: "Value-4",
+    title: "Backend Processing",
+    content:
+      "Rest assured that your audio messages are handled securely and efficiently on the backend. They are stored in a safe environment and can be accessed by the website owner or customer support team for further action or analysis.",
+  },
+  {
+    id: "Value-5",
+    title: "Analytics and Insights",
+    content:
+      "Gain valuable insights from your audio messages. Our chat box provides analytics and data visualization features that allow you to analyze trends, gather feedback, and make data-driven decisions to improve your customer support efforts.",
+  },
+  {
+    id: "Value-6",
+    title: "Notification and Email Integration",
+    content:
+      "To ensure you never miss a message, our chat box offers convenient notification features and email integration. You can receive instant notifications or email alerts when new audio messages arrive, enabling you to stay connected and responsive to your visitors.",
+  },
+  {
+    id: "Value-7",
+    title: "Customization and Branding:",
+    content:
+      "We understand the importance of maintaining your brand's identity. That's why our chat box offers customization options, allowing you to tailor its appearance to match your website's branding and design. Create a seamless and consistent experience for your visitors.",
+  },
+  {
+    id: "Value-8",
+    title: "Call-to-Action",
+    content:
+      "Ready to revolutionize your customer support? Sign up for our audio-based chat box solution today! Click the button below to get started or reach out to our team for more information. We're here to help you enhance your website's communication capabilities." ,
+  }
+  
+];
+ export const posts = [
+  {
+    id: 1,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'In the competitive world of sales, building meaningful connections with your prospects and customers is essential. While emails and text-based communication have their place, nothing quite compares to the power of voice. Rec-Auto offers a cutting-edge solution for sales professionals, empowering them to leverage the effectiveness of voice messaging. With our intuitive and user-friendly interface, you can easily craft personalized voice messages that resonate with your audience.',
+
+  },
+  {
+    id: 2,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+
+  },
+  {
+    id: 3,
+    title: 'Boost your conversion rate',
+    href: '#',
+    description:
+      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+
+  },
+
 ]

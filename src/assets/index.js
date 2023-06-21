@@ -14,6 +14,7 @@ import Waves from "./waves.png";
 import CustomerSupport from "./CustomerSupport.png";
 import HandShake from "./handshake-.svg"
 import Mic from "./mic.png"
+import Robot from "./robot.png"
 
 export {
   CustomerSupport,
@@ -31,5 +32,6 @@ export {
   twitter,
   Waves,
   Mic,
-  HandShake
+  HandShake,
+  Robot
 };

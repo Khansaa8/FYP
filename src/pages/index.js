@@ -1,16 +1,18 @@
 
 import ErrorPage from "./error-pgae"
-import HIW from "./HIW"
+import Explore from "./Explore"
 import TermsServives from "./Terms&Services"
 import Form from "./form.jsx"
 import Contact from "./Contact"
 import SignUp from "./SignUp"
+import Usecase from "./Usecase"
 
 export{
     Contact,
     ErrorPage,
-    HIW,
+    Explore,
     TermsServives,
     Form,
-    SignUp
+    SignUp,
+    Usecase
 }
