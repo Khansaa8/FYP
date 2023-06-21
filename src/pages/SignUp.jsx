@@ -24,12 +24,12 @@ const SignUp = () => {
   
 
   return (
-    <div className={`bg-primary ${styles.flexStart} h-screen `}>
+    <div className={`bg-primary ${styles.flexStart} sm:h-screen `}>
       <div
         className={`${styles.boxWidth} ${styles.flexCenter} ${styles.paddingY}  `}
       >
         <div
-          className={`  bg-[#000514] border-solid border-cyan-700 border-[5px] p-10 px-24 items-center ${isLoginClicked ? "mt-[160px]" : "mt-[100px]"}`}
+          className={`  bg-[#000514] border-solid border-cyan-700 border-[5px] p-10 sm:px-24 px-5 sm-mx-0 mx-3 items-center ${isLoginClicked ? "sm:mt-[140px] mt-[50px]" : "sm:mt-[78px] mt-0"}`}
         >
           <div   className={`${styles.flexCenter} mb-7 `}>
             {" "}
