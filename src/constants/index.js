@@ -88,32 +88,16 @@ export const footerLinks = [
         id: 'TS',
         name: "Terms & Services",
         link: "/termsservives",
-      },      
+      },
       {
         id: 'UseC',
+        name: "Use Case",
+        link: "/usecase",
+      },      
+      {
+        id: 'login',
         name: "Login",
         link: "/SignUp",
-      },
-      
-    ],
-  },
-  {
-    title: "Use Case",
-    links: [
-      {
-        id: "about",
-        name: "Sales",
-        link:"/usecase",
-      },
-      {
-        id: 'TS',
-        name: "Podcast",
-        link: "/usecase",
-      },      
-      {
-        id: 'UseC',
-        name: "Feedback",
-        link: "/usecase",
       },
       
     ],
@@ -321,7 +305,7 @@ export const ExpVal = [
  export const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Engagging ',
     href: '#',
     description:
       'In the competitive world of sales, building meaningful connections with your prospects and customers is essential. While emails and text-based communication have their place, nothing quite compares to the power of voice. Rec-Auto offers a cutting-edge solution for sales professionals, empowering them to leverage the effectiveness of voice messaging. With our intuitive and user-friendly interface, you can easily craft personalized voice messages that resonate with your audience.',
@@ -329,18 +313,18 @@ export const ExpVal = [
   },
   {
     id: 2,
-    title: 'Boost your conversion rate',
+    title: 'Instant Communication',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      ' Rec-Auto allowa Instant communication which allows you to offer immediate assistance, troubleshoot problems, and resolve issues in real time. By providing fast and efficient support, you can deliver exceptional customer service experiences, building trust and loyalty with your customers. By providing timely and efficient responses, you demonstrate your commitment to customer satisfaction and improve your chances of closing deals and businesses can gain a significant edge.',
 
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'Team Collaboration',
     href: '#',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'Effective team collaboration is essential for driving sales success and achieving revenue goals. By leveraging voice messaging as a collaborative tool, you can enhance communication, streamline processes, and foster a culture of continuous improvement within your sales team. Voice messaging enables sales team members to communicate effortlessly, eliminating the constraints of time and location or share ideas provide updates, seek feedback, or ask questions in a more personal manner. ',
 
   },
 
