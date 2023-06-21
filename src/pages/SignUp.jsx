@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { signupValues } from "../constants";
 import { SignupButton as Button } from "../components";
 import { useState, useEffect } from "react";
+// import { Link } from "react-router-dom";
+
 
 const SignUp = () => {
   useEffect(() => {
@@ -89,5 +91,8 @@ const SignUp = () => {
     </div>
   );
 };
+
+
+
 
 export default SignUp;
