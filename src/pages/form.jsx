@@ -12,8 +12,10 @@ const form = () => {
         </h2>
       </div>
       <form  action="#" method="POST" class="mx-auto mt-6 max-w-xl sm:mt-10">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-        {fValues.map((values, index) => (
+       
+        <FormButton />
+
+        {/* {fValues.map((values, index) => (
           <div key={values.id} className={`${index === 0 || index === 1 ? "" : "sm:col-span-2" }`}>
             <label
               
@@ -31,8 +33,8 @@ const form = () => {
               />
             </div>
           </div>
-          ))}
-
+          ))} */}
+{/* 
         <div className="sm:col-span-2">
             <label
               htmlFor="message"
@@ -49,11 +51,10 @@ const form = () => {
                 defaultValue={""}
               />
             </div>
-          </div>
-        </div>
-        <div className="my-10">
-        <FormButton/>
-        </div>
+          </div> */}
+
+        {/* <div className="my-10">
+        </div> */}
       </form>
     </div>
   );

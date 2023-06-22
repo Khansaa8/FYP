@@ -11,7 +11,7 @@ import {
   SignUp,
   Usecase
 } from "./pages/";
-import { About, Features, Product } from "./components";
+import { About, Features, Product, Login } from "./components";
 
 const router = (
   <BrowserRouter>
@@ -25,7 +25,8 @@ const router = (
       <Route path="/product" element={<Product />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/usecase" element={<Usecase/>} />
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="/login" element={<Login />}/>
+      <Route path="*" element={<ErrorPage />} /> 
     </Routes>
   </BrowserRouter>
 );
