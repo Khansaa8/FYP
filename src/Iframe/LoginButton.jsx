@@ -223,9 +223,16 @@ const LoginButton = () => {
       <div className={`${styles.boxWidth}`}>
         <section className={`${layout.section}`}>
           <div className={`sm:px-36 px-6 flex-1 flex-col `}>
-            <h1 className={`${styles.heading2} ${styles.flexCenter}`}>Welcome to <span className="text-gradient">Rec-Auto</span></h1>
+          <div>
+          <h1 className={`${styles.heading2} ${styles.flexCenter}`}>Welcome to <span className="text-gradient"> &nbsp; Rec-Auto</span></h1>          
+          </div>
+          <div className={`my-10 font-poppins text-[20px] leading-[30.8px] border-sky-500 rounded-md border-solid border-4 p-5 `}>
+            <p className="font-normal text-dimWhite"><span className="font-bold text-[25px] text-gradient"> Link : &nbsp; </span> &lt; iframe src="https://6493c8eb7952ca1bf1bb1a2f--dreamy-fenglisu-a80c14.netlify.app/" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="20px" height="400px" width="600px" allowfullscreen &gt; &lt;/iframe&gt;
+            </p>
+          </div>
             </div>
-            </section></div>
+            </section>
+            </div>
             </div>
             </MainLayout>
   )
