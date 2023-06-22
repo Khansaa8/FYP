@@ -213,11 +213,21 @@
 // }
 
 // export default Login;
-import React from 'react'
+import MainLayout from "./MainLayout"
+import styles ,{layout} from "../style"
 
 const LoginButton = () => {
   return (
-    <div>LoginButton</div>
+    <MainLayout>  
+    <div className={`bg-primary ${styles.flexStart} ${styles.paddingX}`}>
+      <div className={`${styles.boxWidth}`}>
+        <section className={`${layout.section}`}>
+          <div className={`sm:px-36 px-6 flex-1 flex-col `}>
+            <h1 className={`${styles.heading2} ${styles.flexCenter}`}>Welcome to <span className="text-gradient">Rec-Auto</span></h1>
+            </div>
+            </section></div>
+            </div>
+            </MainLayout>
   )
 }
 

@@ -9,10 +9,8 @@ import Testimonials from "./Testimonials";
 import Home from "./Home";
 import FormButton from "./FormButton" 
 import SignupForm from "./SignupForm";
-import Login from "./LoginButton.jsx"
 import FormBack from "./Formback.jsx"
 export {
-    Login,
     Navbar,
     Product,
     About,
